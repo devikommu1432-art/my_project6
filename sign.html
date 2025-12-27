@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup UI</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0a0b0e80;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background:#fff;
+    width:350px;
+    padding:35px;
+    border-radius:14px;
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.input-box{
+    width:100%;
+    margin-bottom:15px;
+    position:relative;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px 14px;
+    padding-right:40px;
+    border:1px solid #dadada;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.input-box i{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#777;
+    cursor:pointer;
+}
+
+.signup-btn{
+    width:100%;
+    padding:12px;
+    background:#0b63ce;
+    border:none;
+    color:#fff;
+    border-radius:6px;
+    font-size:15px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.login-text{
+    text-align:center;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.login-text a{
+    color:#356df1;
+    text-decoration:none;
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.divider span{
+    font-size:13px;
+    color:#888;
+    margin:0 10px;
+}
+
+.divider:before,
+.divider:after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#ddd;
+}
+
+.social-btn{
+    width:100%;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+    margin-bottom:12px;
+}
+
+.fb{
+    background:#4267B2;
+    border:none;
+    color:#fff;
+}
+
+.fb i{
+    background:#fff;
+    color:#4267B2;
+    border-radius:50%;
+    padding:6px;
+    font-size:14px;
+}
+
+.google{
+    background:#fff;
+    border:1px solid #ddd;
+    color:#444;
+}
+
+.google i{
+    color:#DB4437;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Signup</h2>
+
+    <div class="input-box">
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Create password">
+    </div>
+
+    <div class="input-box">
+        <input type="password" placeholder="Confirm password">
+        <i class="fa-regular fa-eye"></i>
+    </div>
+
+    <button class="signup-btn">Signup</button>
+
+    <p class="login-text">Already have an account? <a href="log.html">Login</a></p>
+
+    <div class="divider"><span>Or</span></div>
+
+    <button class="social-btn fb">
+        <i class="fa-brands fa-facebook-f"></i>
+      <a href="https://r.search.yahoo.com/_ylt=Awr4.6_dtTdpp2kAIlZXNyoA;_ylu=Y29sbwNncTEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1766468317/RO=10/RU=https%3a%2f%2fwww.facebook.com%2flogin.php%2f%3flang%3den_US/RK=2/RS=BJqUD214tgFu3Dmq3yFwn52UT5I-">Login with Facebook</a>
+    </button>
+
+    <button class="social-btn google">
+        <i class="fa-brands fa-google"></i>
+        <a href="https://r.search.yahoo.com/_ylt=AwrO50h1tjdp1HcAc3FXNyoA;_ylu=Y29sbwNncTEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1766468469/RO=10/RU=https%3a%2f%2fwww.google.com%2f/RK=2/RS=lTT4Pd.R4sDO0CxQ9YjHgE1zD6I-">Login with Google</a>
+    </button>
+</div>
+
+</body>
+</html>
